@@ -4,6 +4,8 @@
 *.bld
 *.cmd_log
 *.drc
+*.debug
+*.jhd
 *.ll
 *.lso
 *.msd
@@ -25,6 +27,7 @@
 *.twx
 *.unroutes
 *.ut
+*.vf
 *.xpi
 *.xst
 *_bitgen.xwbt
@@ -44,6 +47,8 @@
 
 # iMPACT generated files
 _impactbatch.log
+_impact.cmd
+_impact.log
 impact.xsl
 impact_impact.xwbt
 ise_impact.cmd
@@ -64,4 +69,5 @@ iseconfig/
 xlnx_auto_0_xdb/
 xst/
 _ngo/
+planAhead_run_*/
 _xmsgs/
