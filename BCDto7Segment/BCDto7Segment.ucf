@@ -3,3 +3,7 @@ NET "LED1" LOC = P81;
 NET "LED2" LOC = P80;
 NET "SW0" LOC = P45;
 NET "SW1" LOC = P46;
+
+# PlanAhead Generated physical constraints 
+
+NET "LED3" LOC = P79;

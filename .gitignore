@@ -21,6 +21,7 @@
 *.ptwx
 *.rbb
 *.rbd
+*.schlog
 *.stx
 *.syr
 *.twr
@@ -63,6 +64,9 @@ par_usage_statistics.html
 usage_statistics_webtalk.html
 webtalk.log
 webtalk_pn.xml
+
+pa.fromHdl.tcl
+sch2HdlBatchFile
 
 # generated folders
 iseconfig/

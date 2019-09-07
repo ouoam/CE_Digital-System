@@ -1,3 +1,0 @@
-select figure at 940 480 8 -branches -sn=1
-delete attr BA|XLXI_16|INIT -sn=1
-select figure at 310 459 8 -branches -sn=1
