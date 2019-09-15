@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            09/08/2019 - 15:12
+SOURCE          D:\project\CE_Digital-System\BCDto7Segment\Untitled.mcs
+DEVICE          1024K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x0AC72D71
+START_ADDRESS   0x00000000 END_ADDRESS 0x0005327B DIRECTION_UP   "D:/project/CE_Digital-System/BCDto7Segment/bcdto7segment.bit" 6slx9tqg144

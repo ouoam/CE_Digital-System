@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\project\CE_Digital-System\BCDto7Segment//Untitled -s 1024 -u 0000 D:/project/CE_Digital-System/BCDto7Segment/bcdto7segment.bit -spi 
+
+PROM D:\project\CE_Digital-System\BCDto7Segment\Untitled.prm map: Sun Sep 08 15:12:40 2019
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          1024K
+PROM start    0000:0000
+PROM end      000f:ffff
+PROM checksum 0ac72d71
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0005:327b     Sep 08 15:10:02 2019 D:/project/CE_Digital-System/BCDto7Segment/bcdto7segment.bit
