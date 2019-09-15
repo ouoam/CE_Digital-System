@@ -1,0 +1,5 @@
+[Inputs]
+=BCDin[3:0]=
+[Outputs]
+=Seven_Segment[6:0]=
+[BiDir]
