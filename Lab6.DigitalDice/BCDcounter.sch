@@ -7,15 +7,13 @@
     </attr>
     <netlist>
         <signal name="CLK" />
-        <signal name="BCD(3:0)" />
         <signal name="XLXN_4" />
         <signal name="XLXN_5" />
-        <signal name="XLXN_6" />
-        <signal name="XLXN_7" />
         <signal name="BCD(0)" />
         <signal name="BCD(1)" />
         <signal name="BCD(2)" />
         <signal name="BCD(3)" />
+        <signal name="BCD(3:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="BCD(3:0)" />
         <blockdef name="cd4ce">
@@ -72,10 +70,6 @@
         <branch name="CLK">
             <wire x2="1760" y1="1344" y2="1344" x1="1680" />
         </branch>
-        <branch name="BCD(3:0)">
-            <wire x2="2480" y1="1120" y2="1120" x1="2400" />
-        </branch>
-        <iomarker fontsize="28" x="2480" y="1120" name="BCD(3:0)" orien="R0" />
         <branch name="XLXN_4">
             <wire x2="1680" y1="1200" y2="1280" x1="1680" />
             <wire x2="1760" y1="1280" y2="1280" x1="1680" />
@@ -89,20 +83,37 @@
         <instance x="1616" y="1200" name="XLXI_2" orien="R0" />
         <instance x="1616" y="1648" name="XLXI_3" orien="R0" />
         <branch name="BCD(0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="1024" type="branch" />
-            <wire x2="2240" y1="1024" y2="1024" x1="2144" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2192" y="1024" type="branch" />
+            <wire x2="2192" y1="1024" y2="1024" x1="2144" />
+            <wire x2="2224" y1="1024" y2="1024" x1="2192" />
         </branch>
         <branch name="BCD(1)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="1088" type="branch" />
-            <wire x2="2240" y1="1088" y2="1088" x1="2144" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2192" y="1088" type="branch" />
+            <wire x2="2192" y1="1088" y2="1088" x1="2144" />
+            <wire x2="2224" y1="1088" y2="1088" x1="2192" />
         </branch>
         <branch name="BCD(2)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="1152" type="branch" />
-            <wire x2="2240" y1="1152" y2="1152" x1="2144" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2192" y="1152" type="branch" />
+            <wire x2="2192" y1="1152" y2="1152" x1="2144" />
+            <wire x2="2224" y1="1152" y2="1152" x1="2192" />
         </branch>
         <branch name="BCD(3)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="1216" type="branch" />
-            <wire x2="2240" y1="1216" y2="1216" x1="2144" />
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2192" y="1216" type="branch" />
+            <wire x2="2192" y1="1216" y2="1216" x1="2144" />
+            <wire x2="2224" y1="1216" y2="1216" x1="2192" />
         </branch>
+        <branch name="BCD(3:0)">
+            <wire x2="2400" y1="960" y2="960" x1="2320" />
+            <wire x2="2320" y1="960" y2="1024" x1="2320" />
+            <wire x2="2320" y1="1024" y2="1088" x1="2320" />
+            <wire x2="2320" y1="1088" y2="1152" x1="2320" />
+            <wire x2="2320" y1="1152" y2="1216" x1="2320" />
+            <wire x2="2320" y1="1216" y2="1232" x1="2320" />
+        </branch>
+        <iomarker fontsize="28" x="2400" y="960" name="BCD(3:0)" orien="R0" />
+        <bustap x2="2224" y1="1024" y2="1024" x1="2320" />
+        <bustap x2="2224" y1="1088" y2="1088" x1="2320" />
+        <bustap x2="2224" y1="1152" y2="1152" x1="2320" />
+        <bustap x2="2224" y1="1216" y2="1216" x1="2320" />
     </sheet>
 </drawing>

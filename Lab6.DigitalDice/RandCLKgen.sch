@@ -60,20 +60,18 @@
         <instance x="1600" y="1456" name="XLXI_1" orien="R0">
         </instance>
         <branch name="seed(3:0)">
-            <wire x2="1584" y1="1424" y2="1424" x1="1456" />
-            <wire x2="1600" y1="1424" y2="1424" x1="1584" />
+            <wire x2="1600" y1="1424" y2="1424" x1="1456" />
         </branch>
         <branch name="CLK">
-            <wire x2="1520" y1="1360" y2="1360" x1="1456" />
+            <wire x2="1520" y1="1488" y2="1488" x1="1440" />
+            <wire x2="2240" y1="1488" y2="1488" x1="1520" />
             <wire x2="1600" y1="1360" y2="1360" x1="1520" />
             <wire x2="1520" y1="1360" y2="1488" x1="1520" />
-            <wire x2="2240" y1="1488" y2="1488" x1="1520" />
         </branch>
         <branch name="XLXN_3">
             <wire x2="1520" y1="1264" y2="1296" x1="1520" />
             <wire x2="1600" y1="1296" y2="1296" x1="1520" />
         </branch>
-        <iomarker fontsize="28" x="1456" y="1360" name="CLK" orien="R180" />
         <iomarker fontsize="28" x="1456" y="1424" name="seed(3:0)" orien="R180" />
         <branch name="R(3:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2032" y="1296" type="branch" />
@@ -95,5 +93,6 @@
         <instance x="1456" y="1264" name="XLXI_2" orien="R0" />
         <instance x="2240" y="1552" name="XLXI_3" orien="R0" />
         <iomarker fontsize="28" x="2544" y="1456" name="CLKout" orien="R0" />
+        <iomarker fontsize="28" x="1440" y="1488" name="CLK" orien="R180" />
     </sheet>
 </drawing>
