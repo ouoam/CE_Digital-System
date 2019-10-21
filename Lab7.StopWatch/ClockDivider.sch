@@ -217,11 +217,9 @@
         </branch>
         <instance x="208" y="2032" name="XLXI_38" orien="R0" />
         <iomarker fontsize="28" x="2896" y="1184" name="CLK7Seg" orien="R0" />
-        <iomarker fontsize="28" x="2896" y="1248" name="CLKcounter" orien="R0" />
         <branch name="CLKcounter">
-            <wire x2="2784" y1="1664" y2="1664" x1="2704" />
-            <wire x2="2784" y1="1248" y2="1664" x1="2784" />
-            <wire x2="2896" y1="1248" y2="1248" x1="2784" />
+            <wire x2="2720" y1="1664" y2="1664" x1="2704" />
+            <wire x2="3040" y1="1664" y2="1664" x1="2720" />
         </branch>
         <branch name="XLXN_59">
             <wire x2="2320" y1="1600" y2="1600" x1="1744" />
@@ -307,5 +305,6 @@
             <wire x2="2752" y1="1600" y2="1600" x1="2704" />
         </branch>
         <iomarker fontsize="28" x="3040" y="1600" name="CLKdots" orien="R0" />
+        <iomarker fontsize="28" x="3040" y="1664" name="CLKcounter" orien="R0" />
     </sheet>
 </drawing>

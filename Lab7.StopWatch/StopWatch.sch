@@ -13,11 +13,10 @@
         <signal name="XLXN_241" />
         <signal name="CLK" />
         <signal name="XLXN_232" />
-        <signal name="XLXN_245" />
-        <signal name="XLXN_276" />
-        <signal name="XLXN_294" />
         <signal name="RESET" />
         <signal name="Button" />
+        <signal name="XLXN_297" />
+        <signal name="XLXN_299" />
         <port polarity="Output" name="SEG(7:0)" />
         <port polarity="Output" name="COM(3:0)" />
         <port polarity="Input" name="CLK" />
@@ -75,21 +74,21 @@
         </block>
         <block symbolname="Clock_Min_Sec" name="XLXI_33">
             <blockpin signalname="XLXN_223(15:0)" name="BCD(15:0)" />
-            <blockpin signalname="XLXN_245" name="CLR" />
+            <blockpin signalname="XLXN_297" name="CLR" />
             <blockpin signalname="XLXN_230" name="CE" />
             <blockpin signalname="CLK" name="C" />
         </block>
         <block symbolname="ClockDivider" name="XLXI_24">
             <blockpin signalname="CLK" name="ClockIn" />
-            <blockpin signalname="XLXN_276" name="ENcounter" />
+            <blockpin signalname="XLXN_299" name="ENcounter" />
             <blockpin signalname="XLXN_232" name="CLK7Seg" />
             <blockpin signalname="XLXN_230" name="CLKcounter" />
             <blockpin signalname="XLXN_241" name="CLKdots" />
-            <blockpin signalname="XLXN_245" name="CLRcounter" />
+            <blockpin signalname="XLXN_297" name="CLRcounter" />
         </block>
         <block symbolname="WatchControl" name="XLXI_39">
-            <blockpin signalname="XLXN_276" name="EN" />
-            <blockpin signalname="XLXN_245" name="CLR" />
+            <blockpin signalname="XLXN_299" name="EN" />
+            <blockpin signalname="XLXN_297" name="CLR" />
             <blockpin signalname="RESET" name="RESET" />
             <blockpin signalname="Button" name="Button" />
         </block>
@@ -129,12 +128,6 @@
         </instance>
         <iomarker fontsize="28" x="3136" y="880" name="SEG(7:0)" orien="R0" />
         <iomarker fontsize="28" x="3136" y="1008" name="COM(3:0)" orien="R0" />
-        <branch name="XLXN_245">
-            <wire x2="1632" y1="1360" y2="1360" x1="1600" />
-            <wire x2="1728" y1="1360" y2="1360" x1="1632" />
-            <wire x2="1632" y1="1008" y2="1360" x1="1632" />
-            <wire x2="2144" y1="1008" y2="1008" x1="1632" />
-        </branch>
         <instance x="1728" y="1264" name="XLXI_24" orien="R0">
         </instance>
         <branch name="XLXN_232">
@@ -142,16 +135,11 @@
             <wire x2="2608" y1="944" y2="1296" x1="2608" />
             <wire x2="2688" y1="944" y2="944" x1="2608" />
         </branch>
-        <branch name="XLXN_276">
-            <wire x2="1728" y1="1296" y2="1296" x1="1600" />
-        </branch>
         <branch name="RESET">
-            <wire x2="1200" y1="1360" y2="1360" x1="1184" />
-            <wire x2="1216" y1="1360" y2="1360" x1="1200" />
+            <wire x2="1216" y1="1360" y2="1360" x1="1184" />
         </branch>
         <branch name="Button">
-            <wire x2="1200" y1="1296" y2="1296" x1="1184" />
-            <wire x2="1216" y1="1296" y2="1296" x1="1200" />
+            <wire x2="1216" y1="1296" y2="1296" x1="1184" />
         </branch>
         <iomarker fontsize="28" x="1552" y="1088" name="CLK" orien="R180" />
         <instance x="1216" y="1392" name="XLXI_39" orien="R0">
@@ -160,5 +148,15 @@
         <iomarker fontsize="28" x="1184" y="1296" name="Button" orien="R180" />
         <instance x="2688" y="1040" name="XLXI_1" orien="R0">
         </instance>
+        <branch name="XLXN_297">
+            <wire x2="1632" y1="1360" y2="1360" x1="1600" />
+            <wire x2="1648" y1="1360" y2="1360" x1="1632" />
+            <wire x2="1728" y1="1360" y2="1360" x1="1648" />
+            <wire x2="2144" y1="1008" y2="1008" x1="1632" />
+            <wire x2="1632" y1="1008" y2="1360" x1="1632" />
+        </branch>
+        <branch name="XLXN_299">
+            <wire x2="1728" y1="1296" y2="1296" x1="1600" />
+        </branch>
     </sheet>
 </drawing>
