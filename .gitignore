@@ -75,3 +75,8 @@ xst/
 _ngo/
 planAhead_run_*/
 _xmsgs/
+
+# xc3sprog
+xc3sprog.exe
+libusb0.dll
+ftd2xx.dll
