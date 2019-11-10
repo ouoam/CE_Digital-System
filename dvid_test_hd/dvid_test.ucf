@@ -1,0 +1,27 @@
+
+VCCAUX = 3.3;
+
+
+# NET "CLK_50"    LOC = "H17" | IOSTANDARD = LVCMOS33 | PERIOD = 50 MHz;
+NET "CLK_20"     LOC = "P123" | IOSTANDARD = LVCMOS33 | PERIOD = 20MHz; # IO_L37N_GCLK12_0
+
+NET "TMDS(0)"   LOC = "P115" | IOSTANDARD = TMDS_33 ; # Blue
+NET "TMDSB(0)"  LOC = "P114" | IOSTANDARD = TMDS_33 ;
+NET "TMDS(1)"   LOC = "P117" | IOSTANDARD = TMDS_33 ; # Red
+NET "TMDSB(1)"  LOC = "P116" | IOSTANDARD = TMDS_33 ;
+NET "TMDS(2)"   LOC = "P119" | IOSTANDARD = TMDS_33 ; # Green
+NET "TMDSB(2)"  LOC = "P118" | IOSTANDARD = TMDS_33 ;
+NET "TMDS(3)"   LOC = "P121" | IOSTANDARD = TMDS_33 ; # Clock
+NET "TMDSB(3)"  LOC = "P120" | IOSTANDARD = TMDS_33 ;
+
+# INST "I_dvid/qdr_b/ff*"     LOC = "SLICE_X20Y3:SLICE_X21Y4";
+# INST "I_dvid/qdr_b/xor_lut" LOC = "SLICE_X20Y2";
+
+# INST "I_dvid/qdr_g/ff*"     LOC = "SLICE_X26Y3:SLICE_X27Y4 ";
+# INST "I_dvid/qdr_g/xor_lut" LOC = "SLICE_X26Y2";
+
+# INST "I_dvid/qdr_r/ff*"     LOC = "SLICE_X22Y3:SLICE_X23Y4";
+# INST "I_dvid/qdr_r/xor_lut" LOC = "SLICE_X22Y2";
+
+# INST "I_dvid/qdr_c/ff*"     LOC = "SLICE_X14Y3:SLICE_X15Y4";
+# INST "I_dvid/qdr_c/xor_lut" LOC = "SLICE_X14Y2";
