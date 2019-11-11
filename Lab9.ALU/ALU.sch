@@ -6,7 +6,6 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="LED(7:0)" />
         <signal name="XLXN_2" />
         <signal name="SEG(6:0)" />
         <signal name="COM(3:0)" />
@@ -15,7 +14,8 @@
         <signal name="B(7:0)" />
         <signal name="XLXN_10(1:0)" />
         <signal name="Button(3:0)" />
-        <port polarity="Output" name="LED(7:0)" />
+        <signal name="LED(7:0)">
+        </signal>
         <port polarity="Output" name="SEG(6:0)" />
         <port polarity="Output" name="COM(3:0)" />
         <port polarity="Input" name="CLK" />
@@ -81,12 +81,6 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="LED(7:0)">
-            <wire x2="1600" y1="960" y2="960" x1="1504" />
-            <wire x2="1600" y1="960" y2="1200" x1="1600" />
-            <wire x2="1680" y1="1200" y2="1200" x1="1600" />
-            <wire x2="1760" y1="960" y2="960" x1="1600" />
-        </branch>
         <branch name="SEG(6:0)">
             <wire x2="2080" y1="1200" y2="1200" x1="2064" />
             <wire x2="2176" y1="1200" y2="1200" x1="2080" />
@@ -133,6 +127,10 @@
         <iomarker fontsize="28" x="2176" y="1200" name="SEG(6:0)" orien="R0" />
         <iomarker fontsize="28" x="2176" y="1264" name="COM(3:0)" orien="R0" />
         <iomarker fontsize="28" x="432" y="1088" name="Button(3:0)" orien="R180" />
-        <iomarker fontsize="28" x="1760" y="960" name="LED(7:0)" orien="R0" />
+        <branch name="LED(7:0)">
+            <wire x2="1600" y1="960" y2="960" x1="1504" />
+            <wire x2="1600" y1="960" y2="1200" x1="1600" />
+            <wire x2="1680" y1="1200" y2="1200" x1="1600" />
+        </branch>
     </sheet>
 </drawing>

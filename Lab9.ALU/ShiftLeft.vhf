@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ShiftLeft.vhf
--- /___/   /\     Timestamp : 11/10/2019 18:37:41
+-- /___/   /\     Timestamp : 11/11/2019 12:08:14
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -44,31 +44,31 @@ architecture BEHAVIORAL of ShiftLeft is
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
 begin
-   XLXI_1 : BUF
+   XLXI_7_0 : BUF
       port map (I=>A(0),
                 O=>R(1));
    
-   XLXI_2 : BUF
+   XLXI_7_1 : BUF
       port map (I=>A(1),
                 O=>R(2));
    
-   XLXI_3 : BUF
+   XLXI_7_2 : BUF
       port map (I=>A(2),
                 O=>R(3));
    
-   XLXI_4 : BUF
+   XLXI_7_3 : BUF
       port map (I=>A(3),
                 O=>R(4));
    
-   XLXI_5 : BUF
+   XLXI_7_4 : BUF
       port map (I=>A(4),
                 O=>R(5));
    
-   XLXI_6 : BUF
+   XLXI_7_5 : BUF
       port map (I=>A(5),
                 O=>R(6));
    
-   XLXI_7 : BUF
+   XLXI_7_6 : BUF
       port map (I=>A(6),
                 O=>R(7));
    

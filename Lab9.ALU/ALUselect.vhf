@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALUselect.vhf
--- /___/   /\     Timestamp : 11/10/2019 18:37:41
+-- /___/   /\     Timestamp : 11/11/2019 12:08:17
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -220,31 +220,31 @@ architecture BEHAVIORAL of ShiftLeft_MUSER_ALUselect is
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
 begin
-   XLXI_1 : BUF
+   XLXI_7_0 : BUF
       port map (I=>A(0),
                 O=>R(1));
    
-   XLXI_2 : BUF
+   XLXI_7_1 : BUF
       port map (I=>A(1),
                 O=>R(2));
    
-   XLXI_3 : BUF
+   XLXI_7_2 : BUF
       port map (I=>A(2),
                 O=>R(3));
    
-   XLXI_4 : BUF
+   XLXI_7_3 : BUF
       port map (I=>A(3),
                 O=>R(4));
    
-   XLXI_5 : BUF
+   XLXI_7_4 : BUF
       port map (I=>A(4),
                 O=>R(5));
    
-   XLXI_6 : BUF
+   XLXI_7_5 : BUF
       port map (I=>A(5),
                 O=>R(6));
    
-   XLXI_7 : BUF
+   XLXI_7_6 : BUF
       port map (I=>A(6),
                 O=>R(7));
    
@@ -292,7 +292,7 @@ architecture BEHAVIORAL of Minus_MUSER_ALUselect is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_43";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_50";
 begin
    XLXI_1 : ADSU8_HXILINX_ALUselect
       port map (A(7 downto 0)=>A(7 downto 0),
@@ -343,7 +343,7 @@ architecture BEHAVIORAL of Plus_MUSER_ALUselect is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_44";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_51";
 begin
    XLXI_1 : ADD8_HXILINX_ALUselect
       port map (A(7 downto 0)=>A(7 downto 0),
@@ -420,14 +420,14 @@ architecture BEHAVIORAL of ALUselect is
              R : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_52";
-   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_51";
-   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_50";
-   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_49";
-   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_48";
-   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_47";
-   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_46";
-   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_45";
+   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_59";
+   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_58";
+   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_57";
+   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_56";
+   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_55";
+   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_54";
+   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_53";
+   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_52";
 begin
    XLXI_1 : Plus_MUSER_ALUselect
       port map (A(7 downto 0)=>A(7 downto 0),

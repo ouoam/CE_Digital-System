@@ -17,8 +17,6 @@
         <signal name="S(1)" />
         <signal name="XLXN_14" />
         <signal name="B(7:0)" />
-        <signal name="XLXN_16(7:0)" />
-        <signal name="XLXN_17" />
         <port polarity="Output" name="R(7:0)" />
         <port polarity="Input" name="A(7:0)" />
         <port polarity="Input" name="S(1:0)" />

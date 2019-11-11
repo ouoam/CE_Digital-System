@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main.vhf
--- /___/   /\     Timestamp : 11/10/2019 18:37:39
+-- /___/   /\     Timestamp : 11/11/2019 12:08:18
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -450,7 +450,7 @@ architecture BEHAVIORAL of ModeSelect_MUSER_main is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_21";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_80";
 begin
    XLXI_1 : FD4CE_HXILINX_main
       port map (C=>XLXN_23,
@@ -583,31 +583,31 @@ architecture BEHAVIORAL of ShiftLeft_MUSER_main is
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
 begin
-   XLXI_1 : BUF
+   XLXI_7_0 : BUF
       port map (I=>A(0),
                 O=>R(1));
    
-   XLXI_2 : BUF
+   XLXI_7_1 : BUF
       port map (I=>A(1),
                 O=>R(2));
    
-   XLXI_3 : BUF
+   XLXI_7_2 : BUF
       port map (I=>A(2),
                 O=>R(3));
    
-   XLXI_4 : BUF
+   XLXI_7_3 : BUF
       port map (I=>A(3),
                 O=>R(4));
    
-   XLXI_5 : BUF
+   XLXI_7_4 : BUF
       port map (I=>A(4),
                 O=>R(5));
    
-   XLXI_6 : BUF
+   XLXI_7_5 : BUF
       port map (I=>A(5),
                 O=>R(6));
    
-   XLXI_7 : BUF
+   XLXI_7_6 : BUF
       port map (I=>A(6),
                 O=>R(7));
    
@@ -655,7 +655,7 @@ architecture BEHAVIORAL of Minus_MUSER_main is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_22";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_81";
 begin
    XLXI_1 : ADSU8_HXILINX_main
       port map (A(7 downto 0)=>A(7 downto 0),
@@ -706,7 +706,7 @@ architecture BEHAVIORAL of Plus_MUSER_main is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_23";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_82";
 begin
    XLXI_1 : ADD8_HXILINX_main
       port map (A(7 downto 0)=>A(7 downto 0),
@@ -783,14 +783,14 @@ architecture BEHAVIORAL of ALUselect_MUSER_main is
              R : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_31";
-   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_30";
-   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_29";
-   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_28";
-   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_27";
-   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_26";
-   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_25";
-   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_24";
+   attribute HU_SET of XLXI_6_0 : label is "XLXI_6_0_90";
+   attribute HU_SET of XLXI_6_1 : label is "XLXI_6_1_89";
+   attribute HU_SET of XLXI_6_2 : label is "XLXI_6_2_88";
+   attribute HU_SET of XLXI_6_3 : label is "XLXI_6_3_87";
+   attribute HU_SET of XLXI_6_4 : label is "XLXI_6_4_86";
+   attribute HU_SET of XLXI_6_5 : label is "XLXI_6_5_85";
+   attribute HU_SET of XLXI_6_6 : label is "XLXI_6_6_84";
+   attribute HU_SET of XLXI_6_7 : label is "XLXI_6_7_83";
 begin
    XLXI_1 : Plus_MUSER_main
       port map (A(7 downto 0)=>A(7 downto 0),
@@ -940,7 +940,7 @@ architecture BEHAVIORAL of ClockDivider_MUSER_main is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_40 : label is "XLXI_40_32";
+   attribute HU_SET of XLXI_40 : label is "XLXI_40_91";
 begin
    XLXI_37 : VCC
       port map (P=>XLXN_52);
@@ -1052,9 +1052,9 @@ architecture BEHAVIORAL of HEXto7Seg_MUSER_main is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_33";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_34";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_35";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_92";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_93";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_94";
 begin
    XLXI_4 : D4_16E_HXILINX_main
       port map (A0=>HEX(0),
@@ -1202,11 +1202,11 @@ architecture BEHAVIORAL of HEXto7Seg2Digit_MUSER_main is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_39";
-   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_38";
-   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_37";
-   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_36";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_40";
+   attribute HU_SET of XLXI_2_0 : label is "XLXI_2_0_98";
+   attribute HU_SET of XLXI_2_1 : label is "XLXI_2_1_97";
+   attribute HU_SET of XLXI_2_2 : label is "XLXI_2_2_96";
+   attribute HU_SET of XLXI_2_3 : label is "XLXI_2_3_95";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_99";
 begin
    XLXI_1 : HEXto7Seg_MUSER_main
       port map (HEX(3 downto 0)=>XLXN_1(3 downto 0),
@@ -1278,14 +1278,13 @@ entity ALU_MUSER_main is
           Button : in    std_logic_vector (3 downto 0); 
           CLK    : in    std_logic; 
           COM    : out   std_logic_vector (3 downto 0); 
-          LED    : out   std_logic_vector (7 downto 0); 
           SEG    : out   std_logic_vector (6 downto 0));
 end ALU_MUSER_main;
 
 architecture BEHAVIORAL of ALU_MUSER_main is
-   signal XLXN_2    : std_logic;
-   signal XLXN_10   : std_logic_vector (1 downto 0);
-   signal LED_DUMMY : std_logic_vector (7 downto 0);
+   signal LED     : std_logic_vector (7 downto 0);
+   signal XLXN_2  : std_logic;
+   signal XLXN_10 : std_logic_vector (1 downto 0);
    component HEXto7Seg2Digit_MUSER_main
       port ( HEX : in    std_logic_vector (7 downto 0); 
              CLK : in    std_logic; 
@@ -1311,10 +1310,9 @@ architecture BEHAVIORAL of ALU_MUSER_main is
    end component;
    
 begin
-   LED(7 downto 0) <= LED_DUMMY(7 downto 0);
    XLXI_1 : HEXto7Seg2Digit_MUSER_main
       port map (CLK=>XLXN_2,
-                HEX(7 downto 0)=>LED_DUMMY(7 downto 0),
+                HEX(7 downto 0)=>LED(7 downto 0),
                 COM(3 downto 0)=>COM(3 downto 0),
                 SEG(6 downto 0)=>SEG(6 downto 0));
    
@@ -1326,7 +1324,7 @@ begin
       port map (A(7 downto 0)=>A(7 downto 0),
                 B(7 downto 0)=>B(7 downto 0),
                 S(1 downto 0)=>XLXN_10(1 downto 0),
-                R(7 downto 0)=>LED_DUMMY(7 downto 0));
+                R(7 downto 0)=>LED(7 downto 0));
    
    XLXI_4 : ModeSelect_MUSER_main
       port map (Button(3 downto 0)=>Button(3 downto 0),
@@ -1348,7 +1346,6 @@ entity main is
           PB  : in    std_logic_vector (3 downto 0); 
           SW  : in    std_logic_vector (7 downto 0); 
           COM : out   std_logic_vector (3 downto 0); 
-          LED : out   std_logic_vector (7 downto 0); 
           SEG : out   std_logic_vector (6 downto 0));
 end main;
 
@@ -1359,8 +1356,7 @@ architecture BEHAVIORAL of main is
              B      : in    std_logic_vector (7 downto 0); 
              Button : in    std_logic_vector (3 downto 0); 
              SEG    : out   std_logic_vector (6 downto 0); 
-             COM    : out   std_logic_vector (3 downto 0); 
-             LED    : out   std_logic_vector (7 downto 0));
+             COM    : out   std_logic_vector (3 downto 0));
    end component;
    
 begin
@@ -1370,7 +1366,6 @@ begin
                 Button(3 downto 0)=>PB(3 downto 0),
                 CLK=>CLK,
                 COM(3 downto 0)=>COM(3 downto 0),
-                LED(7 downto 0)=>LED(7 downto 0),
                 SEG(6 downto 0)=>SEG(6 downto 0));
    
 end BEHAVIORAL;

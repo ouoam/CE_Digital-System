@@ -12,18 +12,14 @@
         <signal name="PB(3:0)" />
         <signal name="COM(3:0)" />
         <signal name="SEG(6:0)" />
-        <signal name="LED(7:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="SW(7:0)" />
         <port polarity="Input" name="DIP(7:0)" />
         <port polarity="Input" name="PB(3:0)" />
         <port polarity="Output" name="COM(3:0)" />
         <port polarity="Output" name="SEG(6:0)" />
-        <port polarity="Output" name="LED(7:0)" />
         <blockdef name="ALU">
-            <timestamp>2019-11-10T8:57:12</timestamp>
-            <rect width="64" x="320" y="20" height="24" />
-            <line x2="384" y1="32" y2="32" x1="320" />
+            <timestamp>2019-11-11T4:58:52</timestamp>
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <rect width="64" x="0" y="-172" height="24" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -35,7 +31,7 @@
             <line x2="384" y1="-224" y2="-224" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="256" x="64" y="-256" height="320" />
+            <rect width="256" x="64" y="-256" height="256" />
         </blockdef>
         <block symbolname="ALU" name="XLXI_1">
             <blockpin signalname="CLK" name="CLK" />
@@ -44,7 +40,6 @@
             <blockpin signalname="PB(3:0)" name="Button(3:0)" />
             <blockpin signalname="SEG(6:0)" name="SEG(6:0)" />
             <blockpin signalname="COM(3:0)" name="COM(3:0)" />
-            <blockpin signalname="LED(7:0)" name="LED(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -74,9 +69,5 @@
             <wire x2="1952" y1="1152" y2="1152" x1="1920" />
         </branch>
         <iomarker fontsize="28" x="1952" y="1152" name="SEG(6:0)" orien="R0" />
-        <branch name="LED(7:0)">
-            <wire x2="1952" y1="1408" y2="1408" x1="1920" />
-        </branch>
-        <iomarker fontsize="28" x="1952" y="1408" name="LED(7:0)" orien="R0" />
     </sheet>
 </drawing>
